@@ -1,0 +1,346 @@
+body,html {
+  height: 100;
+  margin:0;
+  font-family: "Helvetica Neue","sansation","Century Gothic", CenturyGothic, Geneva;
+  min-height:100% ;
+}
+h1{
+  margin-bottom: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor:pointer;
+  line-height: 60px;
+  font-size:50px;
+  font-style: normal;
+}
+h2{
+  padding-right: 20px;
+  padding-left: 20px;
+  color:#;
+  font-size:30px;
+  line-height:40px;
+  font-style: normal;
+}
+img {width:100%;height:100%}
+
+@font-face {
+font-family: "font";
+src: url("css/fonts/Harabara.eot");
+src:
+url("css/fonts/Harabara.woff") format("woff"),
+url("font.ttf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+@font-face {
+font-family: "cookie";
+src: url("css/fonts/Harabara.eot");
+src:
+url("css/fonts/Harabara.woff") format("woff"),
+url("Cookie.ttf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+@font-face {
+font-family: "caviar";
+src: url("css/fonts/Harabara.eot");
+src:
+url("css/fonts/Harabara.woff") format("woff"),
+url("CaviarDreams.ttf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+@font-face {
+font-family: "sansation";
+src: url("css/fonts/Harabara.eot");
+src:
+url("css/fonts/Harabara.woff") format("woff"),
+url("sansation/sansation_regular.ttf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+.zfront {z-index: 1}
+.zback {z-index: -1}
+.behind {position: fixed;
+top:0px;z-index: -1}
+.upfront {position: fixed;
+top:0px;z-index: 0}
+.imagebox{height:25%}
+
+.fullscgreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../Pics/london.png') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    diskplay: none;
+  }
+}
+ul {
+    opacity: 0.8;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #;
+    height:50px;
+    background-color: #000;
+}
+
+li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-style: normal;
+    font-size: 30px;
+    color:#fff;
+    transition: all .3s ease;
+    font-weight: bold;
+    height:100%;
+    line-height: 50px;
+
+}
+
+li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding:;
+    text-decoration: none;
+    height:100%;
+    width: 100%;
+}
+
+li a:hover {
+    background-color: #222;
+    color:#fff;
+}
+a {
+    color: inherit;
+    cursor: auto;
+    text-decoration: none;
+}
+
+.container{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+  height:auto;
+  width:auto;
+  background-color:#;
+}
+.middle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:flex-start;
+  width: auto;
+  height: 100%;
+  padding-top: px;
+  padding-left:px;
+  background-color: #;
+  text-align: left;
+}
+.middle2 {
+  width: 80%;
+  padding: 0px;
+  padding-top: 50px;
+}
+.col{
+  height:100%;
+  width:auto;
+  -webkit-transition:  1s;
+  transition:  1s;
+}
+.box{
+  width:300px;
+  height:300px;
+  padding:0;
+  margin:0px;
+  position:relative
+}
+.element{
+  width:100%;height: auto;;
+}
+
+.shadow:hover{-webkit-text-fill-color:transparent!important;background-color: none!important;opacity:0.9;
+box-shadow: 0px 0px 0px #222 ;}
+
+.center{margin:auto}
+
+
+.col-full{
+  float:left;
+  width:100%;
+  height:auto;
+  margin:5px;
+}
+.col-half {
+  float:left;
+  width:50%;
+  height:auto;
+  margin:5px;
+  transition: all 1.0s ease;
+
+}
+.col-third {
+  float:left;
+  width:33%;
+  height:auto;
+  margin:5px;
+
+}
+.col-2third {
+  float:left;
+  width:67%;
+  height:auto;
+  margin:5px
+}
+.col-quart {
+  float:left;
+  width:25%;
+  height:auto;
+  margin:5px;
+}
+
+.trans {
+  opacity: 0.8;
+}
+/*
+  Based from this article from Divya Manian -
+  http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.title {
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: '';
+    background-color: #fff;
+}
+
+/* Clip text element */
+.clip{
+-webkit-fill-color: transparent;
+background-image: -webkit-linear-gradient(transparent, transparent),
+            url() ;
+background-image:-o-linear-gradient(transparent, transparent);
+-webkit-background-clip: text;
+}
+.clip-text {
+
+    position: absolute;
+    display: inline-block;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #222;
+    height:auto;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+    background-image: url(http://cdn8.staztic.com/app/a/6278/6278761/hd-abstract-wallpapers-1-0-s-307x512.jpg);
+}

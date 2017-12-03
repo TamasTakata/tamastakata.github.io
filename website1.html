@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="jquery.js"></script>
+  <script>
+  $( document ).ready(function() {
+    $("#docs").slideToggle();
+    $("#proj").hide();
+    $("#tamas").slideToggle();
+      $( ".projButtonHome" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#home" ).slideToggle(500)
+        })
+      $( ".projButtonDocs" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#docs" ).slideToggle(500)
+        })
+      $( ".projButtonTamas" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#tamas" ).slideToggle(500)
+        })
+      $( ".homeButtonProj" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#proj').slideToggle(500)
+        })
+      $( ".homeButtonDocs" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#docs').slideToggle(500)
+        })
+      $( ".homeButtonTamas" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#tamas').slideToggle(500)
+        })
+      $( ".docsButtonProj" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#proj").slideToggle(500)
+        })
+      $( ".docsButtonHome" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#home").slideToggle(500)
+        })
+      $( ".docsButtonTamas" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#tamas").slideToggle(500)
+        })
+      $( ".tamasButtonHome" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $("#tamas").slideToggle(500)
+
+        })
+      $( ".tamasButtonProj" ).click(function(  ) {
+          $("#tamas").slideToggle(500)
+          $("#proj").slideToggle(500)
+        })
+      $( ".tamasButtonDocs" ).click(function(  ) {
+          $("#tamas").slideToggle(500)
+          $("#docs").slideToggle(500)
+        })
+  });
+
+  </script>
+
+  <style>
+    body,html {
+      height: 100%;
+      margin:0;
+    }
+    body{  -webkit-background-position: center;
+      -webkit-background-repeat: no-repeat;
+      -webkit-background-size: cover;}
+    .bg {
+
+      height: 100%;
+      width: 100%;
+      margin:0px;
+      -webkit-background-position: center;
+      -webkit-background-repeat: no-repeat;
+      -webkit-background-size: cover;
+    }
+    .border {
+    }
+    .border:hover {
+    border-right: 3px solid #222;
+    }
+    .transcolor{color:#;opacity:1;
+      -webkit-transition:  .5s;
+      transition:  .5s;
+    }
+    .transcolor:hover {
+      opacity:1;
+      color:transparent!important;
+      background-color:transparent!important;
+      transform:;
+    }
+    .color{color:#;opacity:1;
+      -webkit-transition:  .5s;
+      transition:  .5s;
+    }
+    .color:hover {
+      opacity:1;
+      color:#fff!important;
+      background-color:transparent!important;
+      transform:;
+    }
+    .blackcolor{background-color: #fff;color:#222;opacity:1;
+      -webkit-transition:  .5s;
+      transition:  .5s;}
+    .blackcolor:hover{background-color: #222;color:#fff}
+    .othercolor{color:#fff;opacity:1;
+      -webkit-transition:  .5s;
+      transition:  .5s;}
+    .othercolor:hover{color:#222!important}
+    .whitecolor{color:#fff;background-color: #222;opacity:1;
+      -webkit-transition:  .5s;
+      transition:  .5s;}
+    .whitecolor:hover{opacity:0.8}
+    .side{height:100%;width:20%;background-color: #000}
+    .up{top:50px}
+    .content{min-height:;margin-top:10px;;left:25%;width:900px;justify-content:flex-start;flex-flow:row wrap;height:auto;position:relative;
+            background-color: #}
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+    }
+    .overlay:hover{opacity:0.8}
+    .text {
+    color: #222;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    }
+    .tamas{   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);}
+    .navbar{;margin-left:0px;height:100%;width:300px;flex-flow:column nowrap;}
+    .head{margin-top: 0px;position:fixed;width:;;background-color:#}
+    .content{right:0px;min-height:;margin-top:0px;margin-bottom: 20px;;width:900px;justify-content:flex-start;flex-flow:row wrap;height:auto;position:relative;
+            background-color: #222}
+    .container{
+    }
+    .desc{width:900px;margin-bottom: 0;;margin-top: 0px;top: ;position:relative;;width:px;background-color:#fff;color:#222}
+    .strip:hover{background:#fff!important;color:#222!important}
+    .box{margin-bottom:0px;margin-right: 0px;margin-top:0px}
+  </style>
+</head>
+
+<body style = "background-attachment:fixed;background-image:url(Pics/coolplane.jpg)">
+
+
+
+  <div id = "home" class = "bg" style = "">
+    <div id = "homeContainer" class = "navbar head container" style="position:sticky">
+      <div class = ' color border' style = "margin-bottom:5px;;width:100%;;color:#222;background-color:#">
+        <h1 class = "projButtonHome"style ="">Projects</h1>
+      </div>
+      <div class = '  color border' style = "margin-bottom:5px;width:100%;color:#222;background-color:#">
+        <h1 class = "docsButtonHome" style="">Docs</h1>
+      </div>
+      <div class = '  color border ' style = ";width:100%;color:#222;background-color:#">
+        <h1 class = "tamasButtonHome" style="">Tamas</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div id = "proj" class = "" style="">
+    <div id = 'projContainer'class = " container navbar head " style="background-color:#;opacity:1">
+      <div class = ' ' style = ";width:100%;;color:#222;">
+      <h1 style = "margin-bottom:20px"class = "homeButtonProj whitecolor">Home</h1>
+      <h2 class = "blackcolor"><a href = "#laptop">Stands</a><h1>
+      <h2 class = "blackcolor"><a href = "#MC">Mechanical Counter</a><h1>
+      <h2 class = "blackcolor"><a href = "#Corkscrew">Corkscrew</a><h1>
+      <h2 class = "blackcolor"><a href = "#Box">Box</a><h1>
+      <h2 class = "blackcolor"><a href = "#Beer">Bottle Opener</a><h1>
+      <h2 class = "blackcolor"><a href = "#Nike">Nike Plaque</a><h1>
+      <h2 class = "blackcolor"><a href = "#ChocolateBar">Chocolate Bar</a><h1>
+    </div>
+  </div>
+  <div class = 'content'>
+    <h1 class = "whitecolor">Projects</h1>
+  </div>
+  <div class = 'projContentContainer' style = ";top:0px">
+    <div id = "laptop"class = " desc content" style = "">
+      <h2>These stands were all laser cut from balsa wood</h2>
+    </div>
+    <div class = " content container">
+      <div class = 'box' style='position:a;background-color:#'>
+        <img src = "ProjectPics/IMG_5621.JPG">
+        <div class = 'overlay'>
+          <h2 class = 'text'>Book stand 1.</h2>
+        </div>
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5636.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5638.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5641.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "Pics/lapbook.jpg">
+      </div>
+      <div class = ' box' style='background-color:#eee'>
+        <img src = "Pics/laptop.jpg">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5644.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5787.JPG">
+      </div>
+    </div>
+    <div id = "MC"class = "desc content" style = "height:">
+      <h2>This is a mechanical counter where each slot is a separate digit place.
+        10 turns from the smaller slot results in a single turn of the larger slot.
+      Its 3D model was designed using the Fusion360 CAD software.</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/count1.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/count2.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/count3.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/count4.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/mcmodel1.png">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/mcmodel2.png">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/mcmodel3.png">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5784.JPG">
+      </div>
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "Pics/mc1.png">
+      </div>
+    </div>
+    <div id = "Corkscrew" class = "desc content" style = "">
+      <h2>This is a corkscrew 3D model made using Fusion360. It was modeled after
+      a corkscrew that was likely fabricated using a combination of stamping and spinning.
+      The flat base was likely stamped, and the helical corkscrew was probably made using metal spinning techniques.</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "Pics/cork3.png">
+      </div>
+    </div>
+    <div id = "Box"class = "desc content" style = "">
+      <h2>This box was made from six identical pieces of laser cut balsa wood</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = 'box' style='background-color:#eee'>
+        <img src = "ProjectPics/IMG_5785.JPG">
+      </div>
+    </div>
+    <div id = "Beer"class = "desc content" style = "">
+      <h2>3D model of a bottle opener. It was modeled in Fusion360 after a bottleopener that was most
+      likely fabricated using stamping techniques and perhaps milled to achieve the smooth, contoured edges.</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = ' box ' style='background-color:#eee'>
+        <img src = "Pics/beer2.png">
+      </div>
+    </div>
+    <div id = "Nike"class = "desc content" style = "">
+      <h2>Nike plaque mold for making chocolate bars</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = '  box ' style='background-color:#eee'>
+        <img src = "Pics/nrc3.png">
+      </div>
+      <div class = '  box ' style='background-color:#eee'>
+        <img src = "ProjectPics/medal.jpg">
+      </div>
+    </div>
+    <div id = "ChocolateBar"class = "desc content" style = "">
+      <h2>Chocolate bar mold</h2>
+    </div>
+    <div class = " content container"style = "">
+      <div class = '  box ' style='height:500px;background-color:#eee'>
+        <img style = ""src = "ProjectPics/chocojules.jpg">
+      </div>
+      <div class = '  box ' style='height:300px;background-color:#eee'>
+        <img style = ""src = "ProjectPics/choco1.jpg">
+      </div>
+      <div class = '  box ' style='height:300px;background-color:#eee'>
+        <img style = ""src = "ProjectPics/choco2.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!--div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/mc1.png">
+  </div>
+  <div class = 'col imagebox' style='background-color:#'>
+    <img src = "Pics/lapbook.jpg">
+  </div>
+  <div class = 'col imagebox' style='background-color:#'>
+    <img src = "Pics/laptop.jpg">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/cork3.png">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/beer2.png">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/nrc3.png">
+  </div-->
+
+</div>
+</div>
+
+
+<div id = "docs" class = "" style = "backgrzound-image: url(Pics/castlebg.jpg);">
+  <div class = "container " style="width:100%;;position:fixed;">
+    <div class = ' transcolor' style = ";;width:100%;;color:#222;background-color:#fff">
+    <h1 style = ""class = "homeButtonDocs">Home</h1>
+    </div>
+  </div>
+  <div class="container  center" style = "z-index:0">
+    <div class = 'transcolor' style = "opacity:1;width:100%;position:sticky;left:25%;;top:0px;;color:#222;background-color:#fff">
+      <h1 class = "homeButtonDocs" style="">Project Proposal</h1>
+    </div>
+    <iframe class = ""src="https://docs.google.com/presentation/d/e/2PACX-1vRMAX3mC1vlzNk9HZLz3D-ImLC2J23rZER98iH3iEfFT3kHvVLjA1xnr-m_cxksRp3NI-Ny_uTU7XLa/embed?start=false&loop=true&delayms=5000" frameborder="0" width="100%" height="750px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" ></iframe>
+  </div>
+  <div class="container  center" style = "">
+    <div class = 'transcolor' style = "opacity:1;width:100%;position:sticky;left:25%;;top:0px;;color:#222;background-color:#fff">
+      <h1 class = " homeButtonDocs" style="">Traceability Matrix</h1>
+    </div>
+    <img class = "center"src="Pics/TraceMatrix.jpg"></img>
+  </div>
+  <div class="container  center" style = "">
+    <div class = 'transcolor' style = "opacity:1;width:100%;position:sticky;left:25%;;top:0px;;color:#222;background-color:#fff">
+      <h1 class = " homeButtonDocs" style="">Gantt Chart</h1>
+    </div>
+    <img class = "center"style = ""src="Pics/gantt.png"></img>
+  </div>
+</div>
+
+<!--div id = "tafmas" class = "" style = "">
+  <div id = "tamasContainer" class = "navbar head container" style="">
+    <div class = ' color ' style = "margin-bottom:20px;;width:100%;;color:#222;background-color:#">
+      <h1 class = "homeButtonTamas"style ="">Home</h1>
+    </div>
+    <div class = ' color ' style = "margin-bottom:20px;;width:100%;;color:#222;background-color:#">
+      <h1 class = "contact"style ="">Contact</h1>
+    </div>
+    <div style = "height:1000px;position: relative; left:0px;top; 50%;bottom:0px;background-color:#fff;">
+      <h2>
+        Things I like:<br> Family, Food, Cars, Trains, Planes, Cooking, Baking, Building, Singing, Piano, Tinkering, Traveling<br>
+        School:<br>
+        Tufts<br>
+        Major<br>
+        Biomedical Engineering<br>
+        Favorite Projects:<br>
+        Big
+      </h2>
+    </div>
+  </div>
+  <div class = 'content container' style = "padding-top:5px">
+    <div class = 'element' style='background-color:'>
+    <img src = "Pics/gradfam.jpg">
+    </div>
+    <div class = 'element' style='background-color:'>
+    <img src = "Pics/charles.jpg">
+    </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/chicago.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/gangsters.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/wtcolorbg.jpg">
+    </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/hublein.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad2.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/pizza.jpg">
+    </div>
+    <div class = 'element' style=';background-color:#'>
+    <img src = "Pics/boys.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/storr.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/blacksea.jpg">
+    </div>
+  </div>
+</div-->
+
+<div id = "tamas" class = "" style = "backgrzound-image: url(Pics/castlebg.jpg);">
+
+  <div class = "container head color strip " style="width:100%;;position:fixed;">
+    <div class = ' othercolor' style = "color:#fff">
+    <h1 style = ""class = "homeButtonTamas">Home</h1>
+    </div>
+    <div class = ' othercolor' style = "color:#fff">
+    <h1 style = "text-align:right"class = "">Contact</h1>
+    </div>
+  </div>
+  <div class = ' container' style = "padding-top:0px">
+    <div class = 'element' style=''>
+      <img src = "Pics/gradfam.jpg">
+    </div>
+    <div class = 'element' style='background-color:'>
+    <img src = "Pics/charles.jpg">
+    </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/chicago.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/gangsters.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/wtcolorbg.jpg">
+    </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/hublein.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad2.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/pizza.jpg">
+    </div>
+    <div class = 'element' style=';background-color:#'>
+    <img src = "Pics/boys.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/storr.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/blacksea.jpg">
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

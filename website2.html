@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styledemo.css">
+  <script src="js/jquery.js"></script>
+
+  <script>
+  $( document ).ready(function() {
+    $("#docs").slideToggle();
+    $("#proj").slideToggle();
+    $("#tamas").slideToggle();
+    $("#one").addClass("active");
+      $( ".projButtonHome" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#home" ).slideToggle(500)
+          $( "#projContainer" ).animate({
+            top: "-=500px",
+          }, 1000, function() {
+          });
+        })
+      $( ".projButtonDocs" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#docs" ).slideToggle(500)
+        })
+      $( ".projButtonTamas" ).click(function(  ) {
+          $('#proj').slideToggle(500)
+          $( "#tamas" ).slideToggle(500)
+        })
+      $( ".homeButtonProj" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#proj').slideToggle(500)
+          $( "#projContainer" ).animate({
+            top: "+=500px",
+          }, 1000, function() {
+          });
+        })
+      $( ".homeButtonDocs" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#docs').slideToggle(500)
+        })
+      $( ".homeButtonTamas" ).click(function(  ) {
+          $("#home").slideToggle(500)
+          $('#tamas').slideToggle(500)
+        })
+      $( ".docsButtonProj" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#proj").slideToggle(500)
+        })
+      $( ".docsButtonHome" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#home").slideToggle(500)
+        })
+      $( ".docsButtonTamas" ).click(function(  ) {
+          $("#docs").slideToggle(500)
+          $("#tamas").slideToggle(500)
+        })
+      $( ".tamasButtonHome" ).click(function(  ) {
+          $("#tamas").slideToggle(500)
+          $("#home").slideToggle(500)
+        })
+      $( ".tamasButtonProj" ).click(function(  ) {
+          $("#tamas").slideToggle(500)
+          $("#proj").slideToggle(500)
+        })
+      $( ".tamasButtonDocs" ).click(function(  ) {
+          $("#tamas").slideToggle(500)
+          $("#docs").slideToggle(500)
+        })
+  });
+
+  </script>
+
+  <style>
+  body,html {
+    height: 100%;
+    margin:0;
+  }
+  .bg {
+
+    height: 100%;
+    width: 100%;
+    margin:0px;
+    -webkit-background-position: center;
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: cover;
+  }
+  h1{padding-right: 20px;padding-left: 20px;cursor:pointer;line-height: 80px; height:100%}
+  h2{margin-left: 0;color:#;font-size:50px;line-height:50px;padding-top:;:}
+  img {width:auto;height:100%}
+  .color{color:#000;opacity:.8;
+    -webkit-transition:  .5s;
+    transition:  .5s;}
+    .shadow{
+  text-shadow: 2px 2px #000}
+  .color:hover {
+    opacity:1;
+    color:#fff;
+    background-color:#000;
+    transform:;
+  }
+  .active{    color:#fff;
+      background-color:#000;}
+  .fill{
+    color:#bbb;
+    background-color:#222;
+  }
+  .fill:hover {color: #fff}
+  .col:hover {;
+
+  }
+  .black:hover{
+    background-color:#fff !important;
+    color: #222 !important;
+
+  }
+  .opaque:hover{opacity:0.9;}
+  .clip{
+    -webkit-fill-color: transparent;
+    background-image: -webkit-linear-gradient(transparent, transparent),
+                url() ;
+    background-image:-o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+  }
+  .large {width:400px} .medium {width:300px} .small{width:200px} .xsmall {width:100px}
+  .border {
+    border-left: 1px solid #002;
+  }
+  .shadow:hover{-webkit-text-fill-color:transparent!important;background-color: none!important;opacity:0.9;
+    box-shadow: 0px 0px 0px #222 ;}
+    .head{width:100%;height:80px;position:fixed;width:;left:0px;bottom:50px;background-color:#fff}
+    .up{top:50px}
+    .container{opacity:0.9}
+  </style>
+</head>
+
+<body>
+
+  <div id = "homeContainer" class = "head container" style="">
+    <div class = '  color ' style = ";color:#;background-color:#">
+      <h1 class = "projButtonHome"style ="">PROJECTS</h1>
+    </div>
+    <div class = '  color ' style = ";color:#;background-color:#">
+      <h1 class = "docsButtonHome" style="">DOCS</h1>
+    </div>
+    <div  class = '  color ' style = ";;color:#;background-color:#">
+      <h1 class = "tamasButtonHome" style="">TAMAS</h1>
+    </div>
+  </div>
+
+<div id = "home" class = "fullscreen-bg" style = "width:;height:;">
+  <video loop muted autoplay poster="Pics/london.png" class="fullscreen-bg__video">
+    <source src="Pics/london.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<div id = "proj" class = 'bg' style = ";background-color: white;">
+  <div class = ' container' style = "display:flex;height:40%;width:100%;">
+    <img src = "Pics/mc1.png" style="">
+    <img src = "Pics/beer1.png" style="">
+    <img src = "Pics/cork1.png" style="">
+    <img src = "Pics/nrc1.png" style="">
+  </div>
+  <div id = "projContainer" class = " head container" style="display:flex;height:80px;position:absolute;width:auto;left:50px;bottom:50px;background-color:#fff">
+<div class = '  color ' style = "width:383.28px;;color:#;background-color:#">
+  <h1 class = "homeButtonProj"style ="">HOME</h1>
+</div>
+<div class = '  color ' style = ";color:#;background-color:#">
+  <h1 class = "docsButtonProj" style="">DOCS</h1>
+</div>
+<div class = '  color ' style = ";;color:#;background-color:#">
+  <h1 class = "tamasButtonProj" style="">TAMAS</h1>
+</div>
+</div>
+
+  <!--div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/mc1.png">
+  </div>
+  <div class = 'col imagebox' style='background-color:#'>
+    <img src = "Pics/lapbook.jpg">
+  </div>
+  <div class = 'col imagebox' style='background-color:#'>
+    <img src = "Pics/laptop.jpg">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/cork3.png">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/beer2.png">
+  </div>
+  <div class = 'col trans color imagebox' style='background-color:#fff'>
+    <img src = "Pics/nrc3.png">
+  </div-->
+
+</div>
+</div>
+
+
+<div id = "docs" class = "bg" style = "background-image: url(Pics/castlebg.jpg);">
+  <div class = "head container" style="display:flex;height:80px;position:absolute;width:auto;left:50px;bottom:50px;background-color:#fff">
+  <div class = 'col  color' style = "background-color:#">
+    <h1 class = "projButtonDocs" style="">PROJECTS</h1>
+  </div>
+  <div class = 'col  color' style ="WIDTH:228.52px;color:#;background-color:#">
+    <h1 class = "homeButtonDocs">HOME</h1>
+  </div>
+  <div class = 'col  color' style = ";color:#;background-color:#">
+    <h1 class = "tamasButtonDocs" style="">TAMAS</h1>
+  </div>
+</div>
+</div>
+
+<div id = "tamas" class = "bg" style = "width:100%;;background-color:#222;">
+  <div class = "head container" style="display:flex;height:80px;position:absolute;width:auto;left:50px;bottom:50px;background-color:#fff">
+    <div class = 'col  color' style = "background-color:#">
+      <h1 class = "projButtonTamas" style="">PROJECTS</h1>
+    </div>
+    <div class = 'col  color' style ="WIDTH:228.52px;color:#;background-color:#">
+      <h1 class = "docsButtonTamas">DOCS</h1>
+    </div>
+    <div class = 'col  color' style = "width:284.19px;color:#;background-color:#">
+      <h1 class = "homeButtonTamas" style="">HOME</h1>
+    </div>
+  </div>
+  <div class = 'box' style = "height:25%;padding-left:0px;bottom:0px">
+    <div class = 'element' style='background-color:'>
+    <img src = "Pics/gradfam.jpg">
+  </div>
+    <div class = 'element' style='background-color:'>
+    <img src = "Pics/charles.jpg">
+  </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/chicago.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/gangsters.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/wtcolorbg.jpg">
+    </div>
+    <div class = 'element ' style='background-color:#'>
+    <img src = "Pics/hublein.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad.jpg">
+    </div>
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/dad2.jpg">
+    </div>
+
+    <div class = ' element' style='background-color:#'>
+    <img src = "Pics/pizza.jpg">
+    </div>
+    <div class = 'element' style=';background-color:#'>
+    <img src = "Pics/boys.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/storr.jpg">
+    </div>
+    <div class = 'element' style='background-color:#'>
+    <img src = "Pics/blacksea.jpg">
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
