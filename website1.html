@@ -9,6 +9,7 @@
     $("#docs").slideToggle();
     $("#proj").hide();
     $("#tamas").slideToggle();
+    $(".contactDetails").hide()
       $( ".projButtonHome" ).click(function(  ) {
           $('#proj').slideToggle(500)
           $( "#home" ).slideToggle(500)
@@ -58,6 +59,10 @@
           $("#tamas").slideToggle(500)
           $("#docs").slideToggle(500)
         })
+      $( "#contact" ).mouseenter(function() {
+          $(".contactDetails").fadeIn(500)
+        }).mouseleave(function(){
+                  $(".contactDetails").fadeOut(500)})
   });
 
   </script>
@@ -161,10 +166,10 @@
 
   <div id = "home" class = "bg" style = "">
     <div id = "homeContainer" class = "navbar head container" style="position:sticky">
-      <div class = ' color border' style = "margin-bottom:5px;;width:100%;;color:#222;background-color:#">
+      <div class = ' color border' style = "margin-bottom:0px;;width:100%;;color:#222;background-color:#">
         <h1 class = "projButtonHome"style ="">Projects</h1>
       </div>
-      <div class = '  color border' style = "margin-bottom:5px;width:100%;color:#222;background-color:#">
+      <div class = '  color border' style = "margin-bottom:0px;width:100%;color:#222;background-color:#">
         <h1 class = "docsButtonHome" style="">Docs</h1>
       </div>
       <div class = '  color border ' style = ";width:100%;color:#222;background-color:#">
@@ -425,12 +430,15 @@
 
 <div id = "tamas" class = "" style = "backgrzound-image: url(Pics/castlebg.jpg);">
 
-  <div class = "container head color strip " style="width:100%;;position:fixed;">
-    <div class = ' othercolor' style = "color:#fff">
+  <div class = "container head color  " style="width:100%;;position:fixed;">
+    <div class = ' othercolor strip' style = "width:100%;color:#">
     <h1 style = ""class = "homeButtonTamas">Home</h1>
     </div>
-    <div class = ' othercolor' style = "color:#fff">
-    <h1 style = "text-align:right"class = "">Contact</h1>
+    <div id = "contact"class = ' othercolor strip' style = "width:100%;color:#">
+    <h1 style = "text-align:left"class = "">Contact</h1>
+    </div>
+    <div style = "width:100%;position:relative;color:#fff;background-color:#">
+      <h1 class = "contactDetails" style = 'width:100%;background-color:#222;color:#fff'>edmundtakata@gmail.com <br>860-559-4499</h2>
     </div>
   </div>
   <div class = ' container' style = "padding-top:0px">
