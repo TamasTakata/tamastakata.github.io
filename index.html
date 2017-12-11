@@ -59,10 +59,10 @@
           $("#tamas").slideToggle(500)
           $("#docs").slideToggle(500)
         })
-      $( "#contact" ).mouseenter(function() {
-          $(".contactDetails").fadeIn(500)
-        }).mouseleave(function(){
-                  $(".contactDetails").fadeOut(500)})
+      $( "#contact" ).click(function() {
+          $(".contactDetails").toggle(250)
+          $("#contact").toggleClass("contactblack")
+        })
       $( ".projButtonHome" ).mouseenter(function() {
           $(".pr").animate({width:"230px"},500)
         }).mouseleave(function(){
@@ -87,6 +87,7 @@
     body{  -webkit-background-position: center;
       -webkit-background-repeat: no-repeat;
       -webkit-background-size: cover;}
+    .contactblack{background-color: white;color:#222!important}
     .bg {
 
       height: 100%;
@@ -525,7 +526,7 @@
     <h1 style = "text-align:left"class = "">Contact</h1>
     </div>
     <div style = "width:80%;display:inline;color:#fff;background-color:#">
-      <h1 class = "contactDetails" style = ';background-color:#222;color:#fff'>edmundtakata@gmail.com 860-559-4499</h2>
+      <h1 class = "contactDetails" style = 'cursor:auto;background-color:#222;color:#fff'>edmundtakata@gmail.com 860-559-4499</h2>
     </div>
   </div>
   <div class = ' container' style = "padding-top:0px">
