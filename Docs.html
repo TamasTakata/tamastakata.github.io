@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="jquery.js"></script>
+  <script>
+  $( document ).ready(function() {
+    $(".greyBG").hide();
+    $(".arrow").hide();
+    $("#portfolio").hide();
+    $(".arrow").fadeIn(2000);
+    $(".greyBG").fadeIn(2000);
+    $("#homeContainer").hide();
+    $("#homeContainer").fadeIn(2000);
+    $('.arrow').click(function() {
+      $("#portfolio").show();
+      $("#portfolio").animate({left:'0px'},"slow");
+      $(".arrow").hide();
+
+    }
+    )
+  });
+
+  </script>
+  <style>
+  .border {border-style: solid;;border-color: inherit;
+  }
+  .border:hover {
+    border-color: transparent;
+  }
+  .Pnav{
+    color:#222;
+    line-height:;font-size:;
+  }
+
+  .button:hover {
+    border-color: transparent;
+    -webkit-transition:  .5s;
+    transition:  .5s;
+  }
+  .textcolor{color:#eee}
+  img{width:auto;margin-right: 10px;margin-bottom: 10px;}
+  .portfolio{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position:absolute;
+  top:33%;
+  height:250px;
+  width:auto;
+  }
+  </style>
+</head>
+
+<body style = "background-attachment:fixed;background-image:url(Pics/harder.JPG)">
+  <div class = 'greyBG' style = "position:fixed;top:0px;left:0px;right:0px;bottom:0px;background-color:#222;opacity:0.4">
+  </div>
+  <!--h1 class = " button"style = "font-size:100px;color:#fff;vertical-align: middle;position:relative;bottom:0px;;text-align:center;margin:auto">
+    Projects
+  </h1-->
+  <div class = 'homenav textcolor' style = 'left:10px;right:10px;top:10px;opacity:0.8'>
+    <div class = 'Pnav textcolor' style = "">
+      <h1 class = " button border"style =""><a href = 'index.html'>Home</a></h1>
+    </div>
+    <div class = 'Pnav textcolor' style = ";border-left:solid;margin-left:20px;margin-top:0px;padding-top:2px">
+      <h1 class = "" style="">Documents.</h1>
+    </div>
+  </div>
+  <div id = "portfolio" class = 'portfolio'style = "left:100%">
+  </div>
+  <div class = 'arrow button' style = ";position:fixed;right:10px;top:45%;">
+    <img style = "width:50px" src = "Pics/LeftArrow.svg">
+  </div>
+
+</body>
+
+
+</html>

@@ -6,18 +6,22 @@
   <script src="jquery.js"></script>
   <script>
   $( document ).ready(function() {
+    $(".greyBG").hide();
+    $(".greyBG").fadeIn(2000);
+    $("#homeContainer").hide();
+    $("#homeContainer").fadeIn(2000);
     $("#docs").slideToggle();
     $("#proj").hide();
     $("#tamas").slideToggle();
     $(".contactDetails").hide()
-      $( ".projButtonHome" ).click(function(  ) {
+      /*$( ".projButtonHome" ).click(function(  ) {
           $('#proj').slideToggle(500)
           $( "#home" ).slideToggle(500)
         })
-      $( ".projButtonDocs" ).click(function(  ) {
+      /*$( ".projButtonDocs" ).click(function(  ) {
           $('#proj').slideToggle(500)
           $( "#docs" ).slideToggle(500)
-        })
+        })*/
       $( ".projButtonTamas" ).click(function(  ) {
           $('#proj').slideToggle(500)
           $( "#tamas" ).slideToggle(500)
@@ -26,11 +30,11 @@
           $("#home").slideToggle(500)
           $('#proj').slideToggle(500)
         })
-      $( ".homeButtonDocs" ).click(function(  ) {
+      /*$( ".homeButtonDocs" ).click(function(  ) {
           $("#home").slideToggle(500)
           $('#docs').slideToggle(500)
-        })
-      $( ".homeButtonTamas" ).click(function(  ) {
+        })*/
+      /*$( ".homeButtonTamas" ).click(function(  ) {
           $("#home").slideToggle(500)
           $('#tamas').slideToggle(500)
         })
@@ -58,7 +62,7 @@
       $( ".tamasButtonDocs" ).click(function(  ) {
           $("#tamas").slideToggle(500)
           $("#docs").slideToggle(500)
-        })
+        })*/
       $( "#contact" ).click(function() {
           $(".contactDetails").toggle(250)
           $("#contact").toggleClass("contactblack")
@@ -97,10 +101,10 @@
       -webkit-background-repeat: no-repeat;
       -webkit-background-size: cover;
     }
-    .border {    border-right: 2px solid #222;
+    .border {border-style: solid;;border-color: inherit;
     }
     .border:hover {
-    border-right: 0px solid #222;
+      border-color: transparent;
     }
     .transcolor{color:#;opacity:1;
       -webkit-transition:  .5s;
@@ -112,17 +116,20 @@
       background-color:transparent!important;
       transform:;
     }
-    .color{color:#fff;opacity:1;
+    .color{padding-bottom: 5px;color:#eee;
     }
+    .button{  cursor:pointer;
+}
     .color:hover {
+      border-color: transparent;
       -webkit-transition:  .5s;
       transition:  .5s;
       opacity:1;
-      color:#222!important;
+      color:#!important;
       background-color:transparent!important;
       transform:;
     }
-    .blackcolor{background-color: #222;color:#fee;opacity:1;
+    .blackcolor{background-color: #222;color:#fff;opacity:1;
       -webkit-transition:  .5s;
       transition:  .5s;}
     .blackcolor:hover{background-color: transparent;color:#222}
@@ -172,24 +179,35 @@
     .box{margin:5px;margin-right: 0px;margin-top:0px}
     .colthird{margin:0px;width:300px;display:inline-block;vertical-align: top}
     .coltwothird{margin-right:5px;width:605px;display:inline-block;vertical-align: top}
+    .border-1{border-style: solid;border-color: #222;border-width: medium;}
   </style>
 </head>
 
-<body style = "background-attachment:fixed;background-image:url(Pics/coolplane.JPG)">
-
-
+<body style = "background-attachment:fixed;background-image:url(Pics/dad.JPG)">
+  <div class = 'greyBG' style = "position:fixed;top:0px;left:0px;right:0px;bottom:0px;background-color:#222;opacity:0.4">
+  </div>
 
   <div id = "home" class = "bg" style = "">
     <div id = "homeContainer" class = "" style="">
-      <div class = ' color ' style = "height:120px;left:50px;top:50px;position:fixed;color:#eef;background-color:#222">
-        <h1 class = " projButtonHome"style ="line-height:100px;font-size:100px;">Projects</h1>
+      <!--div style = "position:fixed;background-color:#000;width:100%; height:350px;opacity:0.7"></div>
+      <img src = 'Pics/SiblingOnesies.jpg' style = "position:fixed;right:50px;top: 50px;height:250px;width:auto"-->
+      <div class = 'homenav' style = 'color:#fff;left:10px;right:10px;top:10px;opacity:0.8'>
+        <div class = 'button color border' style = ";height:;color:#;">
+          <h1 class = " projButtonHome"style =""><a href = 'Projects.html'>Projects</a></h1>
+        </div>
+        <div class = ' button color border' style = "margin-left:10px;margin-right:10px;;height:;;">
+          <h1 class = " docsButtonHome" style=";"><a href = 'Docs.html'>Docs</a></h1>
+        </div>
+        <div class = 'button color  border ' style = "height:;color:#;">
+          <h1 class = "tamasButtonHome" style="">Tamas</h1>
+        </div>
+        <div class = 'color' style = ";border-left:solid;margin-left:10px;margin-top:0px;padding-top:2px">
+          <h1 class = "" style="">Welcome.</h1>
+        </div>
       </div>
-      <div class = '  color ' style = "height:120px;left:50px;top:180px;position:fixed;color:#efe;background-color:#222">
-        <h1 class = " docsButtonHome" style="line-height:100px;font-size:100px;">Docs</h1>
+      <div class = 'container'style = 'position: absolute; left:10px;top:90px;height:auto;width:602px;background-color:#222;opacity:0.9'>
       </div>
-      <div class = ' color   ' style = "height:120px;left:350px;top:180px;position:fixed;color:#fee;background-color:#222">
-        <h1 class = "tamasButtonHome" style="line-height:100px;font-size:100px;">Tamas</h1>
-      </div>
+
     </div>
   </div>
 
@@ -197,7 +215,7 @@
   <div id = "proj" class = "" style="">
     <div id = 'projContainer'class = " container navbar head " style="padding-bottom:10px;background-color:#;opacity:1">
       <div class = ' ' style = ";width:100%;;color:#222;">
-      <h1 style = "color: #efe;margin-bottom:25px"class = "homeButtonProj whitecolor">Home</h1>
+      <h1 style = "color: #fff;margin-bottom:25px"class = "homeButtonProj whitecolor">Home</h1>
       <h3 style = "padding-top:10px"class = "blackcolor"><a href = "#laptop">Stands</a><h1>
       <h3 class = "blackcolor"><a href = "#MC">Mechanical Counter</a><h1>
       <h3 class = "blackcolor"><a href = "#Corkscrew">Corkscrew</a><h1>
@@ -210,7 +228,7 @@
     </div>
   </div>
   <div class = 'content' style = "margin-bottom:25px;margin-left:5px;width:910px;;background-color:#222">
-    <h1 style = "color:#eef;cursor:auto">Projects</h1>
+    <h1 style = "color:#fff;cursor:auto">Projects</h1>
   </div>
   <div class = 'projContentContainer' style = ";top:0px">
     <div class = " content container">

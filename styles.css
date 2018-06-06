@@ -4,14 +4,20 @@ body,html {
   font-family: "Helvetica Neue","sansation","Century Gothic", CenturyGothic, Geneva;
   min-height:100% ;
 }
+body,html {
+  height: 100%;
+  margin:0;
+}
+body{  -webkit-background-position: center;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-size: cover;}
 h1{
   margin-bottom: 0px;
   padding-right: 20px;
   padding-left: 20px;
-  cursor:pointer;
   line-height: 60px;
   font-size:50px;
-  font-style: normal;
+  font-weight: normal;
 }
 h2{
   padding-right: 20px;
@@ -165,10 +171,19 @@ li a:hover {
 }
 a {
     color: inherit;
-    cursor: auto;
+    cursor: pointer;
     text-decoration: none;
 }
+.homenav{
+position:fixed;
+display: flex;
+justify-content: flex-start;
+opacity:1;
+width:
+}
 
+.button{  cursor:pointer;
+}
 .container{
   display:flex;
   flex-flow: row wrap;
